@@ -94,12 +94,12 @@ public class CSapp extends GBNHost {
                 // 开始计时器
                 timeModel.setTime(TIMEOUT);
             }
-            System.out.println(hostName + "接收到了ACK: " + ack);
+            //System.out.println(hostName + "接收到了ACK: " + ack);
             // 发送完了
             if (ack == DATA_NUMBER) {
                 // 停止计时器
                 timeModel.setTime(0);
-                System.out.println(hostName + "发送完毕，接收方反馈已全部正确接收");
+                //System.out.println(hostName + "发送完毕，接收方反馈已全部正确接收");
                 System.exit(0);
             }
         }
